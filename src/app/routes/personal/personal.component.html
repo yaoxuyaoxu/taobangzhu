@@ -1,0 +1,68 @@
+<!-- <div class="personalTop">
+  <div class="PersonalBanner">
+    <div class="PersonalBannerM"></div>
+  </div>
+  <div class="HeadImage">
+    <nz-avatar nzText="U" class="HeadImage" style="color:#f56a00; background-color:#fde3cf;font-size: 100px;line-height: 206px;font-weight: bold"></nz-avatar>
+  </div>
+  <div class="UserName">欢迎来到优伯乐电商</div>
+</div>
+
+    <nz-tabset>
+      <nz-tab nzTitle="最近观看">
+        <ul class="MustLearn">
+          <li *ngFor="let recentVideo of Recently">
+            <Course [course]="[recentVideo.lesson.course]"></Course>
+          </li>
+        </ul>
+      </nz-tab>
+      <nz-tab nzTitle="推荐课程">
+        <ul class="MustLearn">
+          <li>
+            <Course [course]="ShouldLearn"></Course>
+          </li>
+        </ul>
+      </nz-tab>
+      <nz-tab nzTitle="我的收藏">
+        <ul class="MustLearn">
+          <li style="overflow: hidden">
+            <div *ngFor="let Colect of MyColection" style="float: left; margin: 10px;">
+              <Course [course]="[Colect.course]"></Course>
+            </div>
+          </li>
+        </ul>
+      </nz-tab>
+      <nz-tab nzTitle="我的评论">
+        <div style="width: 1200px; margin: 40px auto ;font-size: 18px;"><i class="rectangle"></i>我的全部评论 ：</div>
+        <ul class="MustLearn">
+          <li *ngFor="let myComment of MyComment" style="font-size: 18px; border-bottom: 1px solid #ccc;overflow: hidden;">
+            <Course [course]="[myComment.course]"></Course>
+            <p style="float: left">{{myComment.content}}</p>
+          </li>
+        </ul>
+      </nz-tab>
+      <nz-tab nzTitle="我的VIP">
+        <div class="my_info">
+          <table>
+            <tr>
+              <td>VIP信息</td>
+              <td>学习期限</td>
+              <td>开通时间</td>
+              <td>到期时间</td>
+              <td>VIP特权</td>
+            </tr>
+            <tr>
+              <td>{{transVIP}}</td>
+              <td>一年</td>
+              <td>{{StartLearn | date: 'yyyy:MM:dd'}}</td>
+              <td>{{FinishLearn | date: 'yyyy:MM:dd'}}</td>
+                <td *ngIf="Vip">全站视频无限看</td>
+                <td *ngIf="Member">精品课程无限看</td>
+                <td *ngIf="Ordinary">免费课程无限看</td>
+
+            </tr>
+          </table>
+        </div>
+      </nz-tab>
+    </nz-tabset> -->
+

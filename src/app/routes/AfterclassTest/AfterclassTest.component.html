@@ -1,0 +1,82 @@
+<h3 class="AfterclassTestTitle">优伯乐精英测试</h3>
+<h4 class="AfterclassTestSub">优伯乐针对不同人群打造不同学习计划</h4>
+<div class="AfterclassTestBg">
+  <nz-tabset>
+    <p class="AfterclassTestTotle">本测试共 <span> 10 </span>题</p>
+    <nz-tab *ngFor="let tab of tabs" [nzTitle]="titleTemplate">
+      <ng-template #titleTemplate>
+        <div (click)="testJunior(tab.type)"><i [ngClass]="tab.icon"></i>{{ tab.name }}</div>
+      </ng-template>
+      <div class="AfterclassTestBg junior">
+        <div *ngFor="let item of question; index as i">
+          <p class="question"> {{item.title}}</p>
+          <nz-checkbox-wrapper (nzOnChange)="log($event,item.id, i)">
+            <div class="answer">
+              <div nz-row style="width: 1000px; padding-left: 50px">
+                <div *ngFor="let answer of item.options"><label (click)="SingleClick(i,answer.id,item.id)" nz-checkbox nzValue="{{answer.isAnswer}}">{{answer.title}}</label></div>
+              </div>
+            </div>
+          </nz-checkbox-wrapper>
+        </div>
+      </div>
+    </nz-tab>
+  </nz-tabset>
+
+  <div class="UserSubmit" (click)="UserClick(clicked)">提交答案</div>
+</div>
+  <!--<div [ngClass] = "{'AfterclassTestTab': true,'AfterclassActive': active}" (click)="testJunior('JUNIOR')"><i class="anticon anticon-form"></i>新手测试</div>-->
+  <!--<div [ngClass] = "{'AfterclassTestTab': true,'AfterclassActive': active}" (click)="testJunior('INTERMEDIATE')"><i class="anticon anticon-bar-chart"></i>进阶测试</div>-->
+  <!--<div [ngClass] = "{'AfterclassTestTab': true,'AfterclassActive': active}" (click)="testJunior('SENIOR')"><i class="anticon anticon-schedule"></i>精英测试</div>-->
+  <!--<div class="line"></div>-->
+  <!--<p class="AfterclassTestTotle">本测试共 <span> 10 </span>题</p>-->
+<!--</div>-->
+<!--<div class="AfterclassTestBg junior">-->
+  <!--<div *ngFor="let item of question">-->
+    <!--<p class="question">{{item.title}}</p>-->
+    <!--<nz-checkbox-wrapper (nzOnChange)="log($event,item.id)">-->
+      <!--<div class="answer">-->
+        <!--<div nz-row style="width: 1000px; padding-left: 50px">-->
+          <!--<div *ngFor="let answer of item.options"><label nz-checkbox nzValue="{{answer.isAnswer}}">{{answer.title}}</label></div>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</nz-checkbox-wrapper>-->
+
+  <!--</div>-->
+<!--</div>-->
+
+
+
+<!--<div class="AfterclassTestBg middle" *ngIf="middle">-->
+  <!--<div *ngFor="let item of question">-->
+    <!--<p class="question">{{item.title}}</p>-->
+    <!--<nz-checkbox-wrapper (nzOnChange)="log($event)">-->
+      <!--<div class="answer">-->
+        <!--<div nz-row style="width: 1000px; padding-left: 50px">-->
+          <!--<div *ngFor="let answer of item.options"><label nz-checkbox nzValue="{{answer.title}}">{{answer | json}}</label></div>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</nz-checkbox-wrapper>-->
+  <!--</div>-->
+<!--</div>-->
+<!--<div class="AfterclassTestBg senior" *ngIf="senior">-->
+  <!--<div *ngFor="let item of question">-->
+    <!--<p class="question">{{item.title}}</p>-->
+    <!--<nz-checkbox-wrapper (nzOnChange)="log($event)">-->
+      <!--<div class="answer">-->
+        <!--<div nz-row style="width: 1000px; padding-left: 50px">-->
+          <!--<div *ngFor="let answer of item.options"><label nz-checkbox nzValue="{{answer.title}}">{{answer | json}}</label></div>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</nz-checkbox-wrapper>-->
+  <!--</div>-->
+<!--</div>-->
+<script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?2c9ddd987fe5b4eec99abe03a2d3fa66";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+  })();
+  </script>
+  

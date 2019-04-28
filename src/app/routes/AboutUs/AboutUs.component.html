@@ -1,0 +1,112 @@
+<!-- <div class="aboutUs_banner_w">
+  <div class="aboutUs_banner">
+    <p class="aboutUs_bannerTitle">优伯乐电商</p>
+    <p class="aboutUs_banner_content">
+      优伯乐电商隶属于成都优伯乐企业管理咨询有限公司，专门解决中小卖家没有流量、店铺很难盈利难题，独创14天成长计划和店铺运营方案，经过上万名学员测试，效果非常显著，目前，已经超过百万学员在优伯乐电商学习。用心教授每一节课，对待每一个学员，目前为止所有付费学员全部好评。
+    </p>
+    <a href="" class="aboutUs_bannerBtn">了解更多 ></a>
+  </div>
+</div>
+<div class="aboutUs_videoW">
+  <h2 class="aboutUs_videoTitle"><span class="orange">优伯乐</span>企业宣传片 <span class="line"></span></h2>
+<div class="aboutUs_video">
+  <video src="http://cloud.video.taobao.com//play/u/381986007/p/1/e/6/t/1/50243302149.mp4" controls="controls" controlslist="nodownload" width="976" height="580"></video>
+  <div class="aboutUs_videobtm">
+    <p class="aboutUs_videoT">定制学习方案，让你更快实现盈利</p>
+    <p class="aboutUs_videoC">依据店铺诊断情况，定制化教学目标与方案，重点+系统式学习</p>
+  </div>
+  <div class="aboutUs_videobtm">
+    <p class="aboutUs_videoT">定制学习方案，让你更快实现盈利</p>
+    <p class="aboutUs_videoC">依据店铺诊断情况，定制化教学目标与方案，重点+系统式学习</p>
+  </div>
+</div>
+</div>
+<h2 class="aboutUs_videoTitle">师资力量 <span class="aboutUs_teacherSub">精英团队为你解决运营难题</span> </h2>
+<div class="aboutUs_teacherM">
+  <div class="aboutUs_teachersingle">
+    <p class="aboutUs_teacherC aboutUs_teacherCtop">优伯乐有着三高团队</p>
+    <p class="aboutUs_teacherT">高学历、高水平、高素质</p>
+    <p class="aboutUs_teacherC">我们的讲师年轻富有激情，且耐心细心讲解深入浅出，通熟易懂</p>
+  </div>
+  <div class="aboutUs_teachersingle">
+    <p class="aboutUs_teacherC aboutUs_teacherCtop">全职讲师目前15人</p>
+    <p class="aboutUs_teacherT">优伯乐资深讲师</p>
+    <p class="aboutUs_teacherC">讲师均有5年以上店铺运营经验，2位硕士研究生相关专业</p>
+  </div>
+  <div class="aboutUs_teachersingle">
+    <p class="aboutUs_teacherC aboutUs_teacherCtop">助教目前45人</p>
+    <p class="aboutUs_teacherT">优伯乐实战专家</p>
+    <p class="aboutUs_teacherC">丰富的实操经验，2位年销售额超过4000万店铺操盘手</p>
+  </div>
+  <div class="aboutUs_teachersingle">
+    <p class="aboutUs_teacherC aboutUs_teacherCtop">优秀学员上万</p>
+    <p class="aboutUs_teacherT">一对一指导</p>
+    <p class="aboutUs_teacherC">敢于让学员分享，相互学习借鉴经验，学员安全感高，没有任何抱怨。</p>
+  </div>
+</div>
+<div class="aboutUs_serviceW">
+  <div class="aboutUs_serviceM">
+    <h2 class="aboutUs_videoTitle white">我们的服务 <span class="white aboutUs_teacherSub">优质的服务是我们备受青睐的关键</span> </h2>
+    <div class="aboutUs_serveSingle" *ngFor="let item of todoData">
+      <div class="aboutUs_leftcircle">
+        <p class="aboutUs_leftcnt">
+          {{item.name}}
+        </p>
+      </div>
+      <div class="aboutUs_rightcircle">
+        <p class="aboutUs_rightTitle">{{item.content}}</p>
+        <p class="aboutUs_rightCnt">{{item.subcontent}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="aboutUs_videoW">
+  <h2 class="aboutUs_videoTitle">关于优伯乐 <span class="aboutUs_teacherSub">我们一直致力为学员创造最好的课程</span> </h2>
+  <div class="aboutUs_ybl">
+  <div class="aboutUs_yblL">
+    <p class="aboutUs_introduce">
+      <span> 优伯乐</span>优伯乐电商隶属于成都优伯乐企业管理咨询有限公司，专门解决中小卖家没有流量、店铺很难盈利难题，独创14天成长计划和店铺运营方案，经过上万名学员测试，效果非常显著，目前，已经超过百万学员在优伯乐电商学习。用心教授每一节课，对待每一个学员，目前为止所有付费学员全部好评。
+    </p>
+    <p>校长致语：</p>
+    <p>
+      <span>“ </span>
+      我们培养了数以万计的优秀学员，从零基础到大神，
+      不只是因为优秀，更是因为尽责。
+      <span> ”</span>
+    </p>
+    <p>校长签名：</p>
+  </div>
+  <div class="aboutUs_yblR">
+    <img src="../../../assets/img/introduce.jpg" alt="">
+  </div>
+</div>
+</div>
+<h2 class="aboutUs_videoTitle">我们的优势 <span class="aboutUs_teacherSub">独特的教学系统，独创的SIDS学习模式</span> </h2>
+<div class="aboutUs_ybl">
+  <div class="aboutUs_advantageSingle" *ngFor="let advContent of advantageData">
+    <nz-card nzHoverable style="width:388px; height: 500px" [nzCover]="coverTemplate">
+      <nz-card-meta nzTitle="{{advContent.title}}" nzDescription="{{advContent.content}}"></nz-card-meta>
+    </nz-card>
+    <ng-template #coverTemplate>
+      <img alt="example" src="{{advContent.img}}" width="388" height="262"/>
+    </ng-template>
+  </div>
+</div>
+<div class="aboutUs_videoW">
+  <h2 class="aboutUs_videoTitle">公司环境 <span class="line"></span></h2>
+  <div class="aboutUs_teacherM">
+    <div class="aboutUs_environment" *ngFor="let item of environmentData">
+      <img src="http://116.62.58.151:8080/youboleAdmin/{{item.img}}" alt="">
+    </div>
+  </div>
+</div> -->
+<script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?2c9ddd987fe5b4eec99abe03a2d3fa66";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+  })();
+  </script>
+  

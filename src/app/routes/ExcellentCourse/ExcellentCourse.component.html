@@ -1,0 +1,67 @@
+<a target="_blank" href="#">
+  <div class="ExcellentCourse_bannerw">
+    <div class="ExcellentCourse_bannerm">
+    </div>
+  </div>
+</a>
+<h3 class="ExellentCourseTitle">精品课程推荐</h3>
+<div class="ExcellentCourse_container">
+  <div class="ExcellentCourse_RecommendL">
+    <div class="ExcellentCourse_RecommendLT">
+      <p><i class="anticon anticon-sound single"></i>4月15日 20:00直播</p>
+      <div class="line"></div>
+      <p>新品变爆款 做好这3步
+        <br>讲师：雷风</p>
+      <a href="#">参加课程 ></a>
+    </div>
+    <img src="../../../assets/img/JP_top.jpg" alt="" width="326" height="312">
+  </div>
+  <div class="ExcellentCourse_RecommendR">
+    <div class="watchNowM" *ngFor="let Course of courseData" (mouseenter)="Course.show = true">
+      <div class="watch_now"  *ngIf="Course.show" (mouseleave)="Course.show = false">
+        <i class="anticon anticon-play-circle-o"></i>
+        <a target="_blank" (click)="courseconnect(Course.id)">立即观看课程</a>
+      </div>
+      <img src="http://116.62.58.151:8080/youboleAdmin/{{ Course.imageUrl}}" alt="" width="378" height="212">
+    </div>
+  </div>
+</div>
+<h3 class="ExellentCourseTitle">讲师介绍</h3>
+<div class="ExcellentCourse_container">
+  <div class="ExcellentCourse_courseSingle" *ngFor="let teacher of CourseTeacherData">
+    <img src="{{teacher.head}}" alt="" width="270" height="292">
+    <p class="teacher_name">{{teacher.name}}</p>
+    <p class="teacher_job">{{teacher.job}} </p>
+    <p class="teacher_good">{{teacher.good}}</p>
+    <a href="#">联系老师 ></a>
+    <img src="http://116.62.58.151:8080/youboleAdmin/{{teacher.img}}" alt="">
+  </div>
+</div>
+<h3 class="ExellentCourseTitle">全部课程</h3>
+<h4 class="Course_subTitle"><span></span>推广引流</h4>
+<div class="ExcellentCourse_container">
+  <div class="CourseLarge" *ngFor="let courseLarge of courseLargeData">
+    <img src="http://116.62.58.151:8080/youboleAdmin/{{courseLarge.imageUrl}}" alt="" width="350" height="198">
+    <p style="overflow: hidden;white-space: nowrap;text-overflow: ellipsis;">{{courseLarge.content}}</p>
+    <p>讲师：{{courseLarge.lecturer}}</p>
+    <a target="_blank" (click)="courseconnect(courseLarge.id)">免费试看 ></a>
+  </div>
+</div>
+<a class="more" [routerLink]="['/CourseCenter']">更多课程 ></a>
+
+<a href="" class="moreCourse"><img src="../../../assets/img/morecourse.jpg" alt=""></a>
+<h3 class="BottomTitle"><span class="title_line"></span>常见问题回答<span class="title_line"></span></h3>
+<div class="ExcellentCourse_container" *ngFor="let item of QuestionData">
+  <p class="question"><span class="diamond"></span>{{item.question}}</p>
+  <p class="answer">{{item.answer}}</p>
+</div>
+<script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?2c9ddd987fe5b4eec99abe03a2d3fa66";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+  })();
+  </script>
+  

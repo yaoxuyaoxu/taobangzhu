@@ -1,0 +1,90 @@
+<a href="http://taobangz.com/#/CourseDetail?id=268">
+  <div class="index_bannerW">
+    <div class="index_banner">
+      <!-- <nz-carousel nzAutoPlay [nzEffect]="'fade'">
+        <div nz-carousel-content *ngFor="let index of banner">
+          <h3 style="margin: 0 auto; width: 100%; height:100%;"><img src="http://116.62.58.151:8080/youboleAdmin/{{index.imageUrl}}" alt="" width="100%" height="100%"></h3>
+        </div>
+      </nz-carousel>
+        <app-sidebar class="banner_left"></app-sidebar>
+        <app-loginright></app-loginright> -->
+    </div>
+  </div>
+</a>
+<div class="index_main">
+  <section class="clearfix">
+    <h3 class="Videos">VIP专属课程1-7天</h3>
+    <paidCourse></paidCourse>
+    <div class="recommendCourse">
+      <div class="clearfix">
+        <Course [course]="excellentcourse"></Course>
+      </div>
+    </div>
+  </section>
+  <section class="clearfix">
+    <h3 class="Videos">VIP专属课程8-14天</h3>
+    <div style="float: left">
+      <a href="http://taobangz.com/#/CourseDetail?id=244" target="_blank"><img src="../../../../assets/img/vipCourse.jpg" alt="" width="277" height="536"></a>
+    </div>
+    <div class="clearfix">
+      <Course [course]="vipcourse"></Course>
+    </div>
+
+  </section>
+  <!-- <section class="clearfix">
+    <h3 class="Videos">免费课程</h3>
+    <div style="float: left">
+      <Course [course]="freecourse"></Course>
+    </div>
+  </section> -->
+  <section>
+    <h3 class="Videos">你可能遇见的问题</h3>
+    <nz-card class="clearfix" style="width: 1200px; margin: 0 auto">
+      <div nz-card-grid [ngStyle]="gridStyle" style="background-color: #d8b7ee">如何快速获取免费流量？</div>
+      <div nz-card-grid [ngStyle]="gridStyle" style="background-color: #53cfb9">开直通车应该注意什么？</div>
+      <div nz-card-grid [ngStyle]="gridStyle" style="background-color: #eb7a77">如何利用满减活动提升销量？</div>
+      <div nz-card-grid [ngStyle]="gridStyle" style="background-color: #71cae6">店铺标签是什么？</div>
+      <div nz-card-grid [ngStyle]="gridStyle" style="background-color: #70bfe5">白底图的制作方法？</div>
+      <div nz-card-grid [ngStyle]="gridStyle" style="background-color: #4776f1">如何获取淘宝首页流量？</div>
+      <div nz-card-grid [ngStyle]="gridStyle" style="background-color: #9786f0">如何低价开直通车？</div>
+      <div nz-card-grid [ngStyle]="gridStyle" style="background-color: #f3bb73">抢流量上位技巧是什么？</div>
+    </nz-card>
+  </section>
+  <section class="index_last">
+    <h3 class="BottomTitle"><span class="title_line"></span>为什么选择我们？<span class="title_line"></span></h3>
+    <div class="index_bottomM">
+      <div class="index_bottom">
+        <p class="index_btmTitle">网络课堂</p>
+        <p class="index_btmCtn">随时随地上课</p>
+        <p class="index_btmCtn">价格仅仅线下课程的1/3</p>
+      </div>
+      <div class="index_bottom">
+        <p class="index_btmTitle">官方网站</p>
+        <p class="index_btmCtn">淘帮主电商</p>
+        <p class="index_btmCtn">官方网络课堂</p>
+      </div>
+      <div class="index_bottom">
+        <p class="index_btmTitle">雄厚师资</p>
+        <p class="index_btmCtn">淘帮主实力讲师认证</p>
+        <p class="index_btmCtn">目前已超过30名金牌讲师</p>
+      </div>
+      <div class="index_bottom">
+        <p class="index_btmTitle">精品课程</p>
+        <p class="index_btmCtn">优质课程设计</p>
+        <p class="index_btmCtn">专注高效提分</p>
+      </div>
+    </div>
+  </section>
+</div>
+<script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?2c9ddd987fe5b4eec99abe03a2d3fa66";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+  })();
+  </script>
+  
+
+

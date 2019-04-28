@@ -1,0 +1,99 @@
+<!-- <div class="CommunicateBanner_W">
+  <div class="CommunicateBanner_M"></div>
+</div>
+<h2 class="CommunicateTitle">学员分享</h2>
+<h4 class="CommunicateSubtitle">大神级学员实战分享</h4>
+<div class="ExcellentCourse_container">
+    <div class="ExcellentCourse_RecommendL">
+      <div class="ExcellentCourse_RecommendLT">
+        <p>学员cocostro2月销2000单分享</p>
+        <a href="#"><i class="anticon anticon-play-circle-o" style="padding-right: 10px;"></i>观看视频介绍</a>
+      </div>
+      <img src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" alt="" width="326" height="340">
+    </div>
+    <div class="ExcellentCourse_RecommendR">
+      <div class="watchNowM" *ngFor="let Share of CommunicateShareData" (mouseenter)="Share.show = true" >
+        <div class="watch_now"  *ngIf="Share.show" (mouseleave)="Share.show = false">
+          <p>{{ Share.title}}</p>
+          <a (click)="courseconnect(Share.id)"><i class="anticon anticon-play-circle-o" style="padding-right: 10px;"></i>观看视频介绍</a>
+        </div>
+        <img src="http://116.62.58.151:8080/youboleAdmin/{{ Share.imageUrl}}" alt="" width="378" height="212">
+      </div>
+    </div>
+  </div>
+<h2 class="CommunicateTitle">优伯乐杭州线下聚会</h2>
+<h4 class="CommunicateSubtitle">数百名学员参与线下聚会，与讲师零距离互动</h4>
+<div class="ExcellentCourse_container">
+  <div class="Communicate_leftimg">
+    <img src="../../../assets/img/Offlineparty1.jpg" alt="">
+  </div>
+  <div class="Communicate_rightimg">
+    <img src="../../../assets/img/Offlineparty2.jpg" alt="">
+    <img src="../../../assets/img/Offlineparty3.jpg" alt="">
+    <img src="../../../assets/img/Offlineparty4.jpg" alt="">
+    <img src="../../../assets/img/Offlineparty5.jpg" alt="">
+    <img src="../../../assets/img/Offlineparty6.jpg" alt="">
+    <img src="../../../assets/img/Offlineparty7.jpg" alt="">
+  </div>
+</div>
+<div class="dark">
+  <h2 class="CommunicateTitle white">五大能力现场评估</h2>
+  <h4 class="CommunicateSubtitle white space">提升电商运营五大能力 步步为赢 电商问题各个击破</h4>
+  <div class="ExcellentCourse_container">
+    <div class="Communicate_ability"></div>
+    <div class="Communicate_abilityR">
+      <p class="Communicate_Atitle">科学规划，成交稳步提升</p>
+      <p class="Communicate_Actn">用科学的目标与规划指导全年店铺运营， 不再迷茫，店铺业绩有计划地蒸蒸日上</p>
+      <p class="Communicate_Atitle">科学规划，成交稳步提升</p>
+      <p class="Communicate_Actn">用科学的目标与规划指导全年店铺运营， 不再迷茫，店铺业绩有计划地蒸蒸日上</p>
+      <p class="Communicate_Atitle">科学规划，成交稳步提升</p>
+      <p class="Communicate_Actn">用科学的目标与规划指导全年店铺运营， 不再迷茫，店铺业绩有计划地蒸蒸日上</p>
+      <p class="Communicate_Atitle">科学规划，成交稳步提升</p>
+      <p class="Communicate_Actn">用科学的目标与规划指导全年店铺运营， 不再迷茫，店铺业绩有计划地蒸蒸日上</p>
+      <p class="Communicate_Atitle">科学规划，成交稳步提升</p>
+      <p class="Communicate_Actn">用科学的目标与规划指导全年店铺运营， 不再迷茫，店铺业绩有计划地蒸蒸日上</p>
+    </div>
+  </div>
+</div>
+<h2 class="CommunicateTitle">讲师现场授课</h2>
+<h4 class="CommunicateSubtitle">数百名学员参与线下聚会，与讲师零距离互动</h4>
+<div class="ExcellentCourse_container">
+
+
+  <div class="Communitatevideo" >
+    <div *ngIf="one">
+      <video src="http://cloud.video.taobao.com//play/u/381986007/p/1/e/6/t/1/50110756439.mp4" controls="controls" controlslist="nodownload" width="1160"></video>
+    </div>
+    <div *ngIf="two">
+      <video src="http://cloud.video.taobao.com//play/u/381986007/p/1/e/6/t/1/50110756439.mp4" controls="controls" controlslist="nodownload" width="1160"></video>
+    </div>
+    <div *ngIf="three">
+      <video src="http://cloud.video.taobao.com//play/u/381986007/p/1/e/6/t/1/50110756439.mp4" controls="controls" controlslist="nodownload" width="1160"></video>
+    </div>
+    <div *ngIf="four">
+      <video src="http://cloud.video.taobao.com//play/u/381986007/p/1/e/6/t/1/50110756439.mp4" controls="controls" controlslist="nodownload" width="1160"></video>
+    </div>
+  </div>
+    <div class="Communitatevideo_small">
+      <div (click)="one = true ; two = false; three = false; four = false"> <img src="../../../assets/img/video1.jpg" alt=""> </div>
+      <div (click)="two = true; one = false; three = false; four = false"> <img src="../../../assets/img/video2.jpg" alt=""> </div>
+      <div (click)="three = true; two = false; one = false; four = false"> <img src="../../../assets/img/video3.jpg" alt=""> </div>
+      <div (click)="four = true; two = false; three = false; one = false"> <img src="../../../assets/img/video4.jpg" alt=""> </div>
+    </div>
+
+</div>
+<h2 class="CommunicateTitle">优伯乐成都线下聚会</h2>
+<h4 class="CommunicateSubtitle">数百名学员参与线下聚会，与讲师零距离互动</h4>
+<div class="ExcellentCourse_container LastContainer">
+  <img src="../../../assets/img/chengducommunicate.jpg" alt="">
+</div> -->
+<script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?2c9ddd987fe5b4eec99abe03a2d3fa66";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+  })();
+  </script>
+  

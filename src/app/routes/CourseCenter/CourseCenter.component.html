@@ -1,0 +1,27 @@
+<div class="CourseCenter">
+  <div class="CourseCenter_nav">
+    <ul nz-menu [nzMode]="'horizontal'" style="border:1px solid #ddd;background:#f7f7f7;">
+      <li nz-menu-item nzDisabled style="color:#ff7e00 !important;"> 全部课程</li>
+      <li nz-menu-item *ngFor="let coursetype of courseType" (click)='changeCourse(coursetype.id, page)'>
+        <a rel="noopener noreferrer">{{coursetype.name}}</a>
+      </li>
+    </ul>
+    <ul nz-menu [nzMode]="'horizontal'" style="border:1px solid #ddd;background:#fff;">
+      <li nz-menu-item>
+        <a rel="noopener noreferrer" (click)="changeType('VIP',page)">VIP课程</a>
+      </li>
+      <li nz-menu-item>
+        <a rel="noopener noreferrer" (click)="changeType('PAY',page)">付费精品课</a>
+      </li>
+      <li nz-menu-item>
+        <a rel="noopener noreferrer" (click)="changeType('FREE',page)">免费课程</a>
+      </li>
+    </ul>
+  </div>
+  <div class="CourseContainer">
+    <Course [course]="courseAll"></Course>
+  </div>
+  <div class="pagination">
+    <nz-pagination [(nzPageIndex)]="page" (nzPageIndexChange)="pageChange(page)" [nzPageSizeOptions]="[8]" [nzPageSize]="8" [nzTotal]="total"></nz-pagination>
+  </div>
+</div>
